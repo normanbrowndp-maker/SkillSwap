@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>SkillSwap | Каталог навыков</title>
+  </head>
+  <body data-page="skills">
+    <header>
+      <a href="../index.html"><strong>SkillSwap</strong></a>
+      <nav aria-label="Навигация каталога навыков">
+        <ul>
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="skills.html">Навыки</a></li>
+          <li><a href="matches.html">Найти партнёра</a></li>
+          <li><a href="dashboard.html">Личный кабинет</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="skills-title">
+        <h1 id="skills-title">Каталог навыков</h1>
+        <p>Функция фильтрации будет добавлена на этапе JavaScript.</p>
+
+        <form action="skills.html" method="get">
+          <div>
+            <label for="skill-search">Поиск навыка</label>
+            <input id="skill-search" name="skill-search" type="search" placeholder="Например: английский" />
+          </div>
+          <button type="submit">Поиск</button>
+        </form>
+      </section>
+
+      <section aria-labelledby="category-title">
+        <h2 id="category-title">Категории</h2>
+        <ul>
+          <li>Программирование</li>
+          <li>Языки</li>
+          <li>Математика</li>
+          <li>Дизайн</li>
+          <li>Аналитика</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="level-title">
+        <h2 id="level-title">Уровень сложности</h2>
+        <ul>
+          <li>Начальный</li>
+          <li>Средний</li>
+          <li>Продвинутый</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="cards-title">
+        <h2 id="cards-title">Список навыков</h2>
+        <div>
+          <article>
+            <h3>Python</h3>
+            <p>Категория: Программирование</p>
+            <p>Освоение синтаксиса, алгоритмов и практики программирования.</p>
+            <a href="skill-details.html">Подробнее</a>
+          </article>
+          <article>
+            <h3>Английский язык</h3>
+            <p>Категория: Языки</p>
+            <p>Развитие разговорной речи, чтения и аудирования.</p>
+            <a href="skill-details.html">Подробнее</a>
+          </article>
+          <article>
+            <h3>Математика</h3>
+            <p>Категория: Математика</p>
+            <p>Подготовка и объяснение тем от основ до продвинутых уровней.</p>
+            <a href="skill-details.html">Подробнее</a>
+          </article>
+          <article>
+            <h3>JavaScript</h3>
+            <p>Категория: Программирование</p>
+            <p>Основы веб-разработки и логики приложения.</p>
+            <a href="skill-details.html">Подробнее</a>
+          </article>
+          <article>
+            <h3>Графический дизайн</h3>
+            <p>Категория: Дизайн</p>
+            <p>Композиция, визуальная коммуникация и редактирование layouts.</p>
+            <a href="skill-details.html">Подробнее</a>
+          </article>
+          <article>
+            <h3>Excel</h3>
+            <p>Категория: Аналитика</p>
+            <p>Таблицы, формулы, расчёты и автоматизация процессов.</p>
+            <a href="skill-details.html">Подробнее</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>SkillSwap © 2026</p>
+    </footer>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/notifications.js"></script>
+    <script src="../assets/js/animations.js"></script>
+    <script src="../assets/js/matching.js"></script>
+    <script src="../assets/js/forms.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

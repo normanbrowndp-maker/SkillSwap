@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>SkillSwap | Бронирование занятия</title>
+  </head>
+  <body data-page="booking">
+    <header>
+      <a href="../index.html"><strong>SkillSwap</strong></a>
+      <nav aria-label="Навигация бронирования">
+        <ul>
+          <li><a href="matches.html">Мэтчи</a></li>
+          <li><a href="student-profile.html">Профиль</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="booking-title">
+        <h1 id="booking-title">Бронирование занятия</h1>
+      </section>
+
+      <section>
+        <h2>Информация о преподавателе</h2>
+        <p><strong>Преподаватель:</strong> Иван Петров</p>
+        <p><strong>Навык:</strong> Python</p>
+        <p><strong>Продолжительность:</strong> 60 минут</p>
+        <p><strong>Стоимость:</strong> 10 SkillPoints</p>
+      </section>
+
+      <section aria-labelledby="booking-form-title">
+        <h2 id="booking-form-title">Демо-форма бронирования</h2>
+        <form action="" method="get">
+          <div>
+            <label for="booking-date">Дата</label>
+            <input id="booking-date" name="booking-date" type="date" required />
+          </div>
+
+          <div>
+            <label for="booking-time">Время</label>
+            <input id="booking-time" name="booking-time" type="time" required />
+          </div>
+
+          <div>
+            <label for="booking-note">Комментарий</label>
+            <textarea id="booking-note" name="booking-note" rows="4" placeholder="Опишите тему занятия или вопросы"></textarea>
+          </div>
+
+          <button type="submit">Отправить заявку</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>SkillSwap © 2026</p>
+    </footer>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/notifications.js"></script>
+    <script src="../assets/js/animations.js"></script>
+    <script src="../assets/js/matching.js"></script>
+    <script src="../assets/js/forms.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

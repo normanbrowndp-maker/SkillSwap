@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>SkillSwap | Редактирование профиля</title>
+  </head>
+  <body data-page="edit-profile">
+    <header>
+      <a href="../index.html"><strong>SkillSwap</strong></a>
+      <nav aria-label="Навигация редактирования профиля">
+        <ul>
+          <li><a href="dashboard.html">Личный кабинет</a></li>
+          <li><a href="profile.html">Профиль</a></li>
+          <li><a href="matches.html">Мэтчи</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="edit-profile-title">
+        <h1 id="edit-profile-title">Редактировать профиль</h1>
+        <form action="profile.html" method="get">
+          <div>
+            <label for="edit-name">Имя</label>
+            <input id="edit-name" name="edit-name" type="text" value="Алина" required />
+          </div>
+
+          <div>
+            <label for="edit-surname">Фамилия</label>
+            <input id="edit-surname" name="edit-surname" type="text" value="Кузнецова" required />
+          </div>
+
+          <div>
+            <label for="edit-university">Учебное заведение</label>
+            <input id="edit-university" name="edit-university" type="text" value="Московский государственный университет" required />
+          </div>
+
+          <div>
+            <label for="edit-course">Курс</label>
+            <input id="edit-course" name="edit-course" type="text" value="2 курс" required />
+          </div>
+
+          <div>
+            <label for="edit-description">Описание</label>
+            <textarea id="edit-description" name="edit-description" rows="5" required>Студентка, интересующаяся программированием, языками и проектами в области данных.</textarea>
+          </div>
+
+          <div>
+            <label for="edit-skills">Навыки</label>
+            <input id="edit-skills" name="edit-skills" type="text" value="Python, Excel, Public speaking" required />
+          </div>
+
+          <div>
+            <label for="edit-learning">Хочу изучить</label>
+            <input id="edit-learning" name="edit-learning" type="text" value="Английский язык, Графический дизайн, Математика" required />
+          </div>
+
+          <div>
+            <label for="edit-availability">Доступность</label>
+            <input id="edit-availability" name="edit-availability" type="text" value="Вечерние и выходные дни" required />
+          </div>
+
+          <button type="submit">Сохранить изменения</button>
+          <a href="profile.html">Отмена</a>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>SkillSwap © 2026</p>
+    </footer>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/notifications.js"></script>
+    <script src="../assets/js/animations.js"></script>
+    <script src="../assets/js/matching.js"></script>
+    <script src="../assets/js/forms.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

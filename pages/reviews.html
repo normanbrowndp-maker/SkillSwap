@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>SkillSwap | Отзывы</title>
+  </head>
+  <body data-page="reviews">
+    <header>
+      <a href="../index.html"><strong>SkillSwap</strong></a>
+      <nav aria-label="Навигация отзывов">
+        <ul>
+          <li><a href="dashboard.html">Личный кабинет</a></li>
+          <li><a href="sessions.html">Занятия</a></li>
+          <li><a href="wallet.html">Кошелёк</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="reviews-title">
+        <h1 id="reviews-title">Отзывы</h1>
+      </section>
+
+      <section aria-labelledby="reviews-list-title">
+        <h2 id="reviews-list-title">Список отзывов</h2>
+        <article>
+          <h3>Илья Лебедев</h3>
+          <p><strong>Навык:</strong> Английский язык</p>
+          <p><strong>Рейтинг:</strong> 5/5</p>
+          <p><strong>Дата:</strong> 12.09.2026</p>
+          <p>«Понятные объяснения, хорошая атмосфера и полезная практика разговора.»</p>
+        </article>
+        <article>
+          <h3>Марина Соколова</h3>
+          <p><strong>Навык:</strong> Python</p>
+          <p><strong>Рейтинг:</strong> 4/5</p>
+          <p><strong>Дата:</strong> 01.10.2026</p>
+          <p>«Помогла разобраться в базовых понятиях и показала несколько практических задач.»</p>
+        </article>
+      </section>
+
+      <section aria-labelledby="demo-review-title">
+        <h2 id="demo-review-title">Демо-форма отзыва</h2>
+        <p>Реальные отзывы будут доступны только после завершённого занятия.</p>
+        <form action="" method="get">
+          <div>
+            <label for="review-teacher">Имя преподавателя</label>
+            <input id="review-teacher" name="review-teacher" type="text" required />
+          </div>
+
+          <div>
+            <label for="review-skill">Навык</label>
+            <input id="review-skill" name="review-skill" type="text" required />
+          </div>
+
+          <div>
+            <label for="review-rating">Рейтинг</label>
+            <select id="review-rating" name="review-rating">
+              <option>5</option>
+              <option>4</option>
+              <option>3</option>
+              <option>2</option>
+              <option>1</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="review-comment">Комментарий</label>
+            <textarea id="review-comment" name="review-comment" rows="4" required></textarea>
+          </div>
+
+          <button type="submit">Отправить отзыв</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>SkillSwap © 2026</p>
+    </footer>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/notifications.js"></script>
+    <script src="../assets/js/animations.js"></script>
+    <script src="../assets/js/matching.js"></script>
+    <script src="../assets/js/forms.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

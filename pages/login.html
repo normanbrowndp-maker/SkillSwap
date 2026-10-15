@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>SkillSwap | Вход</title>
+  </head>
+  <body data-page="login">
+    <header>
+      <a href="../index.html"><strong>SkillSwap</strong></a>
+      <nav aria-label="Навигация страницы входа">
+        <ul>
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="skills.html">Навыки</a></li>
+          <li><a href="matches.html">Найти партнёра</a></li>
+          <li><a href="about.html">О проекте</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="login-title">
+        <h1 id="login-title">Вход</h1>
+        <form action="" method="get">
+          <div>
+            <label for="login-email">Email</label>
+            <input id="login-email" name="login-email" type="email" autocomplete="email" required />
+          </div>
+
+          <div>
+            <label for="login-password">Пароль</label>
+            <input id="login-password" name="login-password" type="password" autocomplete="current-password" required />
+          </div>
+
+          <button type="submit">Войти</button>
+        </form>
+
+        <p>
+          Нет аккаунта?
+          <a href="register.html">Зарегистрироваться</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>SkillSwap © 2026</p>
+    </footer>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/notifications.js"></script>
+    <script src="../assets/js/animations.js"></script>
+    <script src="../assets/js/matching.js"></script>
+    <script src="../assets/js/forms.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

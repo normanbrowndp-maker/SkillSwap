@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>SkillSwap | Поиск партнёров</title>
+  </head>
+  <body data-page="matches">
+    <header>
+      <a href="../index.html"><strong>SkillSwap</strong></a>
+      <nav aria-label="Навигация мэтчинга">
+        <ul>
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="skills.html">Навыки</a></li>
+          <li><a href="matches.html">Мэтчи</a></li>
+          <li><a href="dashboard.html">Личный кабинет</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="matches-title">
+        <h1 id="matches-title">Подбор подходящих студентов</h1>
+        <p>Демо-алгоритм будет учитывать: соответствие навыка, расписание, рейтинг, уровень подготовки и предпочтения.</p>
+      </section>
+
+      <section aria-labelledby="filters-title">
+        <h2 id="filters-title">Фильтры</h2>
+        <form action="matches.html" method="get">
+          <div>
+            <label for="match-skill">Навык</label>
+            <input id="match-skill" name="match-skill" type="text" value="Python" />
+          </div>
+          <div>
+            <label for="match-level">Уровень</label>
+            <select id="match-level" name="match-level">
+              <option>Начальный</option>
+              <option>Средний</option>
+              <option>Продвинутый</option>
+            </select>
+          </div>
+          <div>
+            <label for="match-format">Формат обучения</label>
+            <select id="match-format" name="match-format">
+              <option>Онлайн</option>
+              <option>Оффлайн</option>
+              <option>Гибрид</option>
+            </select>
+          </div>
+          <button type="submit">Применить фильтры</button>
+        </form>
+      </section>
+
+      <section aria-labelledby="matches-list-title">
+        <h2 id="matches-list-title">Рекомендации</h2>
+        <article>
+          <h3>Иван Петров</h3>
+          <p><strong>Навык:</strong> Python</p>
+          <p><strong>Уровень владения:</strong> Продвинутый</p>
+          <p><strong>Рейтинг:</strong> 4.9</p>
+          <p><strong>Время:</strong> Пн, Ср, Пт, 18:00–20:00</p>
+          <p><strong>Формат:</strong> Онлайн</p>
+          <p>Помогает структурировать обучение и объясняет логику программирования на понятных примерах.</p>
+          <a href="student-profile.html">Смотреть профиль</a>
+          <a href="booking.html">Записаться на занятие</a>
+        </article>
+
+        <article>
+          <h3>Мария Соколова</h3>
+          <p><strong>Навык:</strong> Английский язык</p>
+          <p><strong>Уровень владения:</strong> C1</p>
+          <p><strong>Рейтинг:</strong> 4.8</p>
+          <p><strong>Время:</strong> Вт, Чт, Сб, 17:30–19:30</p>
+          <p><strong>Формат:</strong> Онлайн</p>
+          <p>Готова помогать с разговорной практикой, произношением и подготовкой к экзаменам.</p>
+          <a href="student-profile.html">Смотреть профиль</a>
+          <a href="booking.html">Записаться на занятие</a>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>SkillSwap © 2026</p>
+    </footer>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/notifications.js"></script>
+    <script src="../assets/js/animations.js"></script>
+    <script src="../assets/js/matching.js"></script>
+    <script src="../assets/js/forms.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

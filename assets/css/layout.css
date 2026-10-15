@@ -1,0 +1,134 @@
+.site-header {
+  background: var(--primary-navy);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-header > div,
+.site-footer > div,
+.site-header nav {
+  width: min(var(--container), calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.site-header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-height: 84px;
+}
+
+.site-header a {
+  color: var(--white);
+}
+
+.site-header a:hover {
+  color: var(--accent-yellow);
+}
+
+.site-header nav ul,
+.site-footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.site-header nav li,
+.site-footer nav li {
+  position: relative;
+}
+
+.site-header nav a {
+  padding: 0.5rem 0.2rem;
+  font-size: 0.96rem;
+  position: relative;
+}
+
+.site-header nav a::after,
+.site-footer nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.15rem;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-yellow);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform var(--transition);
+}
+
+.site-header nav a:hover::after,
+.site-header nav a:focus::after,
+.site-footer nav a:hover::after,
+.site-footer nav a:focus::after {
+  transform: scaleX(1);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.site-footer {
+  background: var(--primary-navy);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 2.5rem 0 2rem;
+}
+
+.site-footer > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.site-footer h3,
+.site-footer h2,
+.site-footer p,
+.site-footer a,
+.site-footer li {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.site-footer nav ul {
+  gap: 1rem 1.5rem;
+}
+
+.main-shell {
+  width: min(var(--container), calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.page-header {
+  padding: 2rem 0 0.5rem;
+}
+
+.page-header h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  max-width: 800px;
+}
+
+.section-surface {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 2rem;
+}
+
+.section-surface h2 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin-bottom: 1rem;
+}

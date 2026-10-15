@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>SkillSwap | Регистрация</title>
+  </head>
+  <body data-page="register">
+    <header>
+      <a href="../index.html"><strong>SkillSwap</strong></a>
+      <nav aria-label="Навигация страницы регистрации">
+        <ul>
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="skills.html">Навыки</a></li>
+          <li><a href="matches.html">Найти партнёра</a></li>
+          <li><a href="about.html">О проекте</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="register-title">
+        <h1 id="register-title">Регистрация</h1>
+        <form action="" method="get">
+          <div>
+            <label for="first-name">Имя</label>
+            <input id="first-name" name="first-name" type="text" autocomplete="given-name" required />
+          </div>
+
+          <div>
+            <label for="last-name">Фамилия</label>
+            <input id="last-name" name="last-name" type="text" autocomplete="family-name" required />
+          </div>
+
+          <div>
+            <label for="register-email">Email</label>
+            <input id="register-email" name="register-email" type="email" autocomplete="email" required />
+          </div>
+
+          <div>
+            <label for="university">Учебное заведение</label>
+            <input id="university" name="university" type="text" autocomplete="organization" required />
+          </div>
+
+          <div>
+            <label for="register-password">Пароль</label>
+            <input id="register-password" name="register-password" type="password" autocomplete="new-password" required />
+          </div>
+
+          <div>
+            <label for="confirm-password">Подтверждение пароля</label>
+            <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" required />
+          </div>
+
+          <div>
+            <label for="terms">
+              <input id="terms" name="terms" type="checkbox" required />
+              Я согласен с условиями использования
+            </label>
+          </div>
+
+          <button type="submit">Создать аккаунт</button>
+        </form>
+
+        <p>
+          Уже есть аккаунт?
+          <a href="login.html">Войти</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>SkillSwap © 2026</p>
+    </footer>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/notifications.js"></script>
+    <script src="../assets/js/animations.js"></script>
+    <script src="../assets/js/matching.js"></script>
+    <script src="../assets/js/forms.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

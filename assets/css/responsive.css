@@ -1,0 +1,89 @@
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skill-grid,
+  .match-grid,
+  .dashboard-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .site-header > div,
+  .site-footer > div {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .site-header nav ul,
+  .site-footer nav ul {
+    gap: 0.75rem 1rem;
+  }
+
+  .header-actions {
+    width: 100%;
+  }
+
+  .header-actions .btn,
+  .header-actions a {
+    flex: 1 1 auto;
+    width: auto;
+  }
+
+  .steps-grid,
+  .skill-grid,
+  .match-grid,
+  .dashboard-grid,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .section-surface,
+  .hero,
+  .skillpoints-panel {
+    padding: 1.4rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 11vw, 3rem);
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  main {
+    width: min(var(--container), calc(100% - 1rem));
+  }
+
+  .site-header nav ul {
+    flex-wrap: wrap;
+  }
+
+  .btn,
+  button[type="submit"],
+  button:not([type]) {
+    width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .section-surface {
+    padding: 1.1rem;
+  }
+
+  .table-shell {
+    overflow-x: auto;
+  }
+}

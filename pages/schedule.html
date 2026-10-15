@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>SkillSwap | Расписание</title>
+  </head>
+  <body data-page="schedule">
+    <header>
+      <a href="../index.html"><strong>SkillSwap</strong></a>
+      <nav aria-label="Навигация расписания">
+        <ul>
+          <li><a href="dashboard.html">Личный кабинет</a></li>
+          <li><a href="sessions.html">Занятия</a></li>
+          <li><a href="booking.html">Бронирование</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="schedule-title">
+        <h1 id="schedule-title">Расписание</h1>
+        <p>Демо-расписание студентов и занятий.</p>
+      </section>
+
+      <section aria-labelledby="weekly-title">
+        <h2 id="weekly-title">Неделя</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>День недели</th>
+              <th>Доступные часы</th>
+              <th>Занятия</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Понедельник</td>
+              <td>18:00–20:00</td>
+              <td>Английский язык с Ильёй</td>
+            </tr>
+            <tr>
+              <td>Среда</td>
+              <td>19:00–21:00</td>
+              <td>Python с Мариной</td>
+            </tr>
+            <tr>
+              <td>Пятница</td>
+              <td>17:30–19:30</td>
+              <td>Графический дизайн с Анастасией</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-labelledby="upcoming-title">
+        <h2 id="upcoming-title">Предстоящие занятия</h2>
+        <ul>
+          <li>Понедельник, 18:00 — Английский язык, преподаватель Илья, статус: подтверждено</li>
+          <li>Среда, 19:30 — Python, преподаватель Марина, статус: ожидает подтверждения</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>SkillSwap © 2026</p>
+    </footer>
+    <script src="../assets/js/storage.js"></script>
+    <script src="../assets/js/notifications.js"></script>
+    <script src="../assets/js/animations.js"></script>
+    <script src="../assets/js/matching.js"></script>
+    <script src="../assets/js/forms.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
